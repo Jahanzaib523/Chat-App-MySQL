@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="5dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/rightBubbleItself"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rectangle_chat_green"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+    >
+
+    <ImageView
+        android:id="@+id/textImage"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/textBodyChatBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="255dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+
+        />
+
+    <TextView
+        android:id="@+id/timeChatBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="end"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:text="09:57 AM"
+        />
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/seenStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/rightBubbleItself"
+        android:layout_toStartOf="@id/rightBubbleItself"
+        android:visibility="visible"
+        app:tint="@color/color_grey"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2dp"
+        />
+
+
+</RelativeLayout>

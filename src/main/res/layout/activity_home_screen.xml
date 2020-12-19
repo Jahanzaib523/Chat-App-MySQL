@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <ProgressBar
+
+        android:id="@+id/progressBarHome"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+     <!--this linear layout has the appbar and framelayout under appbar-->
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+        <!--The appbar-->
+        <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+         <!--This framelayout contains all the rest of the screen other than the toolbar, and drawer-->
+        <FrameLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/searchBarHome"
+                    android:layout_marginVertical="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_rectangle_white"
+                    android:elevation="15dp"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginHorizontal="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/searchIconHome"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+
+                        android:src="@drawable/search_icon"/>
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/searchIconHome"
+                        android:layout_toEndOf="@+id/searchIconHome"
+                        android:layout_marginLeft="12dp"
+
+                        android:text="@string/Search"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="16sp"
+
+
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/searchBarProfileIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/avatar"
+                        app:civ_border_color="@color/color_primary"
+                        app:civ_border_width="0.5dp"
+
+
+                        />
+
+
+
+                </RelativeLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewHomeScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+     </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_home"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_main_drawer" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</RelativeLayout>

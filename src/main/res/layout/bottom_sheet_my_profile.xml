@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_white"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myProfile"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/color_grey"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageBottomSheetMyProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/avatar"
+            android:layout_margin="10dp"
+            android:elevation="2dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+
+            android:layout_toRightOf="@id/imageBottomSheetMyProfile"
+            android:layout_toEndOf="@id/imageBottomSheetMyProfile"
+            >
+
+         <TextView
+             android:id="@+id/myNameBottomSheetMyProfile"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Jahanzaib Manzoor"
+
+             android:fontFamily="@font/roboto_medium"
+             android:textColor="@color/black"
+             android:textSize="16sp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"/>
+         <TextView
+             android:id="@+id/phoneNoBottomSheetMyProfile"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="03473300523"
+
+             android:fontFamily="@font/roboto_light"
+             android:textColor="@color/color_grey"
+             android:textSize="12sp"
+
+             app:drawableStartCompat="@drawable/ic_baseline_phone_24"
+             android:drawableTint="@color/color_grey"
+             android:drawablePadding="5dp"
+             android:ellipsize="end"
+             android:maxLines="1"
+             />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"/>
+
+
+
+         <TextView
+             android:id="@+id/genderAndAgeBottomSheetMyProfile"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Male, 20"
+
+             android:fontFamily="@font/roboto_light"
+             android:textColor="@color/color_grey"
+             android:textSize="12sp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             />
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/editProfileButtonBottomSheet"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circle_button_green"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:elevation="2dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginLeft="-6dp"
+        android:layout_marginStart="-6dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/rotated_quote_icon"
+        android:layout_marginVertical="5dp"
+        />
+
+    <TextView
+        android:id="@+id/bioBottomSheetMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.-Oprah Winfrey"
+        android:lineSpacingExtra="2dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/black"
+
+        />
+</LinearLayout>
+

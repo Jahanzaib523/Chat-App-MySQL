@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_white"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userProfile"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/color_grey"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contactImageBottomSheet"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/avatar"
+            android:layout_margin="10dp"
+            android:elevation="2dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+
+            android:layout_toRightOf="@id/contactImageBottomSheet"
+            android:layout_toEndOf="@id/contactImageBottomSheet"
+            >
+
+         <TextView
+             android:id="@+id/contactNameBottomSheetContact"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Jahanzaib Manzoor"
+
+             android:fontFamily="@font/roboto_medium"
+             android:textColor="@color/black"
+             android:textSize="16sp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"/>
+         <TextView
+             android:id="@+id/phoneNoBottomSheetContact"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="03473300523"
+
+             android:fontFamily="@font/roboto_light"
+             android:textColor="@color/color_grey"
+             android:textSize="12sp"
+
+             app:drawableStartCompat="@drawable/ic_baseline_phone_24"
+             android:drawableTint="@color/color_grey"
+             android:drawablePadding="5dp"
+             android:ellipsize="end"
+             android:maxLines="1"
+             />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"/>
+
+
+
+         <TextView
+             android:id="@+id/genderAndAgeBottomSheetContact"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/male21"
+
+             android:fontFamily="@font/roboto_light"
+             android:textColor="@color/color_grey"
+             android:textSize="12sp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginLeft="-6dp"
+        android:layout_marginStart="-6dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/rotated_quote_icon"
+        android:layout_marginVertical="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/bioBottomSheetContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.-Steve Jobs"
+        android:lineSpacingExtra="2dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/black"
+
+        />
+</LinearLayout>
+

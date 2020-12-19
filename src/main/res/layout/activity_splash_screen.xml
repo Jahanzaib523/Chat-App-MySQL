@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/bistro_chat_logo_hollow"/>
+        <EditText
+            android:id="@+id/ipAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_rectangle_green"
+            android:hint="IP Address of Localhost"
+            android:padding="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_regular"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            />
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_rounded_rectangle_white"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/color_primary"
+            android:text="Done"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

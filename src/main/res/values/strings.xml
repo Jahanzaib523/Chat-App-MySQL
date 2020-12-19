@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">i170093_170317 Web Services</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="register">Register</string>
+
+    <string name="save">Save</string>
+
+
+    <string name="password">Password</string>
+    <string name="createpassword">Create password</string>
+    <string name="confirmpassword">Confirm password</string>
+
+
+    <string name="usernameEmailHint">Username or email</string>
+    <string name="emailHint">Email address</string>
+
+
+    <string name="dontHaveAccount">Don\'t have an account?</string>
+    <string name="registerHere">Register here</string>
+
+    <string name="alreadyHaveAccount">Already have an account?</string>
+    <string name="signinHere">Sign in here</string>
+
+    <string name="terms">By tapping "Register", I agree to the privacy policy and the terms &amp; conditions</string>
+
+    <!--Create Profile Strings-->
+
+    <string name="createProfile">Create profile</string>
+    <string name="name">Name</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+
+    <string name="dateOfBirth">Date of birth</string>
+    <string name="dateFormat">DD/MM/YY</string>
+
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="preferNot">Prefer not to say</string>
+
+    <string name="phoneNumber">Phone number</string>
+    <string name="phoneHint">03003132339</string>
+
+    <string name="bio">Bio</string>
+    <string name="bioHint">Tell us about yourself</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+
+    <string name="typeAMessage">Type your message here</string>
+
+    <string name="userProfile">User Profile</string>
+    <string name="male21">Male, 21</string>
+    <string name="deleteConvo">Delete conversation</string>
+    <string name="message">message</string>
+    <string name="selectedImage">Selected image</string>
+
+
+    <string name="NoConversationYet">No conversation yet</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!---->
+    <string name="Search">Search</string>
+    <string name="searchUser">Search user</string>
+
+    <!---->
+    <string name="myProfile">My Profile</string>
+
+    <string name="templateFirstName">McLovin</string>
+    <string name="templateLastName">YoloSwaggin</string>
+    <string name="templatePhoneNo">03005566778</string>
+    <string name="templateDate">15/03/2020</string>
+    <string name="yehMeraAreaHai">Zindagi main chalna hai tou warna achi tarha chal, nahi tou esa sab sikhaon ga k duniya ko mu dikhanay ka layik nahi raho ge. Ye mera area hai aur area main koi bhi entress nahi krna OK? kyunkay zindagi sirf p-chaar din ki zindagi hai warna dou din main aise khel dikhaon ga k chaar din se pehle hi, apnay area saaf kr du ga. OK?! I HATE ME! aaarghhkuthgahxfai</string>
+
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rowHomeItself"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageContactRowHome"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/avatar"
+
+        />
+
+    <!--This is the online status dot, gonna look into changing its visibility on runtime-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/onlineStatusRowHome"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@color/color_primary"
+
+        android:layout_below="@id/imageContactRowHome"
+        android:layout_alignRight="@+id/imageContactRowHome"
+        android:layout_alignEnd="@+id/imageContactRowHome"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="gone"
+
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/white"
+        />
+    <TextView
+        android:id="@+id/nameOfContactRowHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of Contact"
+        android:layout_toRightOf="@+id/imageContactRowHome"
+        android:layout_toEndOf="@+id/imageContactRowHome"
+        android:ellipsize="end"
+        android:maxLines="1"
+
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/latestMessageRowHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NoConversationYet"
+        android:layout_below="@+id/nameOfContactRowHome"
+        android:layout_toRightOf="@+id/imageContactRowHome"
+        android:layout_toEndOf="@+id/imageContactRowHome"
+        android:layout_toLeftOf="@id/unreadIndicator"
+        android:layout_toStartOf="@id/unreadIndicator"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/color_grey"
+        android:textSize="14sp"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/unreadIndicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@color/golden"
+        android:layout_below="@id/nameOfContactRowHome"
+
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/timeRowHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/color_grey"
+        android:textSize="14sp"
+
+        />
+
+
+
+</RelativeLayout>
